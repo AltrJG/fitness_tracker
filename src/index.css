@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cyber-dark text-cyber-light font-cyber;
+  }
+}
+
+@layer components {
+  .cyber-button {
+    @apply px-6 py-2 bg-transparent border-2 border-cyber-primary text-cyber-primary 
+           hover:shadow-neon transition-all duration-300 rounded-md font-semibold;
+  }
+
+  .cyber-input {
+    @apply bg-cyber-dark border-2 border-cyber-primary text-cyber-light px-4 py-2 rounded-md
+           focus:outline-none focus:shadow-neon transition-all duration-300;
+  }
+
+  .cyber-card {
+    @apply bg-cyber-dark/50 border-2 border-cyber-primary p-6 rounded-lg
+           backdrop-blur-sm hover:shadow-neon transition-all duration-300;
+  }
+
+  .cyber-gradient {
+    @apply bg-gradient-to-r from-cyber-primary via-cyber-accent to-cyber-secondary;
+  }
+}
